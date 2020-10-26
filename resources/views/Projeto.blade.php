@@ -1,15 +1,18 @@
 @extends('layout')
 @section('title')
-formulario de contacto
+Empregos
 @endsection
 @section('header')
-contacto
+Empregos
 @endsection
 
 @section('conteudo')
-<h2>Jornal</h2>
+<img src="{{asset('imagens/jornalv2.jpg')}}">
+<img src="{{asset('imagens/futebolv2.jpg')}}">
 <br>
-<img src="{{asset('imagens/jornal.jpg')}}">
+<img src="{{asset('imagens/dentistav2.jpg')}}">
+<img src="{{asset('imagens/medicov2.jpg')}}">
 <br>
-<a href="{{route('formulario.form')}}">ver formulario</a>   
+<h2>opçoes de navegaçao</h2>
+<a href="{{route('formulario.form')}}">ver empregos</a>   
 @endsection

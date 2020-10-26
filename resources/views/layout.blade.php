@@ -10,7 +10,7 @@
         <h1 style="color:blue">@yield('header')</h1>
         @yield('conteudo')
         <div>
-            <h2>opçoes de navegaçao</h2>
+            
             
             
         </div>

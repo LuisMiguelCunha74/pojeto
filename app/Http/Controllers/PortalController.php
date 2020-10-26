@@ -11,20 +11,20 @@ class PortalController extends Controller
         return view('Projeto');    
     }
     public function formulario(Request $request){
-        $nome = $request->nome;
-        $morada = $request->morada;
-        $empregos = $request->empregos;
-        return view('formulario',[
-            'nome'=>$nome,
-            'morada'=>$morada,
-            'empregos'=>$empregos
-        ]);
+
     }
     public function mostrarformulario(){
         return view('formulario');
     }  
     
-    public function execformulario(){
-        return view('execformulario');
+    public function execformulario(Request $request){
+        $nome = $request->nome;
+        $morada = $request->morada;
+        $empregos = $request->empregos;
+        return view('execformulario',[
+            'nome'=>$nome,
+            'morada'=>$morada,
+            'empregos'=>$empregos
+        ]);
     }
 }
